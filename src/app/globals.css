@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .gold-text {
+    /* padding keeps script-font swashes from being clipped by background-clip:text */
+    padding: 0.12em 0.1em 0.18em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .gold-card {
+    background: rgba(20, 18, 16, 0.78);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.18), inset 0 0 18px rgba(212, 175, 55, 0.05);
+    border-radius: 1.25rem;
+  }
+}
+
+/* ---- bird wing flap ---- */
+.bird-wing {
+  transform-box: fill-box;
+  transform-origin: 100% 85%;
+  transform: rotate(-24deg); /* folded down against the body when perched */
+}
+.bird-flap .bird-wing {
+  animation: wing-flap 0.34s ease-in-out infinite;
+}
+@keyframes wing-flap {
+  0%, 100% { transform: rotate(-12deg); }
+  50% { transform: rotate(34deg) scaleY(0.92); }
+}
+
+/* ---- floating hearts ---- */
+@keyframes heart-float {
+  0% { transform: translate3d(0, 0, 0) scale(0.7) rotate(-6deg); opacity: 0; }
+  12% { opacity: 0.85; }
+  50% { transform: translate3d(14px, -55vh, 0) scale(1) rotate(6deg); }
+  88% { opacity: 0.6; }
+  100% { transform: translate3d(-10px, -115vh, 0) scale(0.85) rotate(-4deg); opacity: 0; }
+}
+
+@keyframes flame-flicker {
+  0%, 100% { transform: scale(1, 1) rotate(-1deg); }
+  30% { transform: scale(0.94, 1.08) rotate(2deg); }
+  60% { transform: scale(1.05, 0.95) rotate(-2deg); }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

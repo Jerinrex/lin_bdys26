@@ -1,0 +1,30 @@
+{
+  "name": "kuyilu-birthday",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@fontsource/great-vibes": "^5.0.8",
+    "@fontsource/playfair-display": "^5.0.29",
+    "@fontsource/poppins": "^5.0.14",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^11.18.2",
+    "howler": "^2.2.4",
+    "next": "14.2.35",
+    "pdfjs-dist": "3.11.174",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-pageflip": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  }
+}
