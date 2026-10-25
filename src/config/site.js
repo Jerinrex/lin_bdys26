@@ -10,7 +10,12 @@ export const SITE = {
   birthdayISO: "2026-12-31T00:00:00+05:30",
   timezone: "Asia/Kolkata",
 
-  // Music asset
+  // Music playlist: plays in sequence and loops
+  playlist: [
+    "/music/Rathinamo (Female Version)(KoshalWorld.Com).mp3",
+    "/music/The_Love_Bug_Has_Bitten_-_Anirudh_Ravichander.mp3",
+    "/music/Happy_Birthday_-_Anirudh_Ravichander.mp3",
+  ],
   musicSrc: "/music/Rathinamo (Female Version)(KoshalWorld.Com).mp3",
   storyPdf: "/story/our-story.pdf",
   pdfWorkerSrc: "/pdf.worker.min.js",

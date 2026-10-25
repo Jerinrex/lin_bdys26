@@ -1,16 +1,21 @@
-// EDIT ME: the final letter. Keep it personal, this is the heart of the whole site.
-// Each string in `paragraphs` appears one after another. Use your own words, memories and inside jokes.
-
+// The final heartfelt letter from Jerin to Kuyilu (Lincy)
 export const LETTER = {
   greeting: "My dearest Lincy, my Kuyilu,",
   paragraphs: [
-    "Happy Birthday, my girl. I wanted to find the perfect words for today, and the truth is there are not enough of them.",
-    "So I built you this little world instead, with a little golden bird that looks a lot like you: small, brave, and impossible not to love.",
-    "You make ordinary days feel soft and bright. You make me want to be better, to laugh more, and to hold on to every small moment with you.",
-    "Thank you for being patient with me, for believing in me, and for being you. Even when I act like a total Mailu, you stay.",
-    "Whatever this new year brings, I hope it is gentle with you, and I promise to be right beside you for all of it.",
-    "I love you, more than this little website could ever say.",
+    "Happy Birthday, my girl 🎂✨ I wanted to find the perfect words for today, and the truth is there are not enough words in this world to tell you what you mean to me. So I built you this little world instead, with a golden bird that reminds me so much of you: small, brave, and impossible not to love 💛🕊️",
+
+    "My girl, I won't let you down at any cost. Unna vittukudukkavum maattaen, vittu pogavum maattaen thango 🫂🤍 Naa idha soldradhu pudhusu illa, but I want to assure you every single time that I am always right here for you.",
+
+    "Don't feel bad that I keep asking you to go for jobs… It's only because you should never look at yourself as nothing. You have so much potential, but you're losing your confidence day by day, and that is my only pain and concern. Please don't take it wrongly, Mailu 🥺🫶",
+
+    "Naa paathukkuraen… Unakku pudicha life-ah konduvara kandippa en full potential-ah podraen, and potuttuthan irukaen. But naa edhaiyume unkitta velila soldradhu illa. I don't want to just talk in words—I want to prove it patiently through my actions. And when that dream becomes reality, you are the only one who will celebrate it with me 🥹✨ So be brave, my girl.",
+
+    "Don't let me down, and I promise I will never let you down. The only thing I will ever need from you is: 'Naa irukkaenda, paathukkalaam.' When I feel down or tired, just those three words from you are enough to power me through anything in life 🫶❤️",
+
+    "We have to prove ourselves. Many people laughed at us and thought we couldn't achieve anything in life. We have to show them—they aren't even our competition, and we will make them regret ever doubting us 👑💪",
+
+    "In this entire life's journey, I only want this girl by my side—no one else, ever. Just you. Happy Birthday, my baby girl, my Kuyilu! Loads of love and sweet kisses to you 🤍🫂💋",
   ],
-  signoff: "Forever yours,",
-  signature: "Jerin",
+  signoff: "Forever yours with all my heart,",
+  signature: "Jerin 🤍",
 };
